@@ -109,7 +109,7 @@ def result():
 	return render_template("result.html",res1=pscore,res2=bscore,res3=displaywin,res4=botplayed,res5=youplayed,res6=resultb,res7=resultp)
 if __name__ == '__main__':
     # defining server ip address and port
-    app.run(host='0.0.0.0',port='5000', debug=True)
+    app.run(debug=True)
 
 camera.release()
 cv2.destroyAllWindows()     
